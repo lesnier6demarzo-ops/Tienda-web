@@ -1,0 +1,67 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urban Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Urban Store</h1>
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#productos">Productos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Moda urbana con estilo profesional</h2>
+  <p>Encuentra ropa moderna, cómoda y con personalidad.</p>
+  <button>Ver colección</button>
+</section>
+
+<section id="productos" class="productos">
+  <h2>Productos destacados</h2>
+
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234" />
+      <h3>Sudadera Oversize</h3>
+      <p>$599 MXN</p>
+      <button onclick="agregar('Sudadera Oversize', 599)">Agregar</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f" />
+      <h3>Playera Streetwear</h3>
+      <p>$299 MXN</p>
+      <button onclick="agregar('Playera Streetwear', 299)">Agregar</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" />
+      <h3>Tenis Urbanos</h3>
+      <p>$899 MXN</p>
+      <button onclick="agregar('Tenis Urbanos', 899)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+<section class="carrito">
+  <h2>Carrito</h2>
+  <ul id="lista"></ul>
+  <h3>Total: $<span id="total">0</span> MXN</h3>
+</section>
+
+<footer id="contacto">
+  <p>Urban Store © 2026</p>
+  <p>Contacto: urbanstore@email.com</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
